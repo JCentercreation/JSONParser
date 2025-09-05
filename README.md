@@ -41,7 +41,8 @@
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/JSONParserExtension.git cd JSONParserExtension
+git clone https://github.com/jcentercreation/JSONParser.git
+cd JSONParser
 ```
 
 2. **Open in Xcode**
@@ -256,7 +257,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 Need help? Here's how to get support:
 
-1. **Check** the [Issues](https://github.com/yourusername/JSONParserExtension/issues) section
+1. **Check** the [Issues](https://github.com/jcentercreation/JSONParser/issues) section
 2. **Search** existing issues before creating a new one
 3. **Create** a detailed issue with:
    - Sample JSON input
