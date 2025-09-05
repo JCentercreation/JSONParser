@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		997C3B0F2E6B65F700F1D308 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997C3B0E2E6B65F700F1D308 /* Cocoa.framework */; };
+		997C3B112E6B65F700F1D308 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997C3B102E6B65F700F1D308 /* XcodeKit.framework */; };
+		997C3B1B2E6B65F700F1D308 /* JSONParserExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 997C3B0C2E6B65F700F1D308 /* JSONParserExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		997C3AEC2E6B65AE00F1D308 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +27,47 @@
 			remoteGlobalIDString = 997C3ADC2E6B65AC00F1D308;
 			remoteInfo = JSONParser;
 		};
+		997C3B192E6B65F700F1D308 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 997C3AD52E6B65AC00F1D308 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 997C3B0B2E6B65F700F1D308;
+			remoteInfo = JSONParserExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		997C3B202E6B65F700F1D308 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				997C3B1B2E6B65F700F1D308 /* JSONParserExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		997C3ADD2E6B65AC00F1D308 /* JSONParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		997C3AEB2E6B65AE00F1D308 /* JSONParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		997C3AF52E6B65AE00F1D308 /* JSONParserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONParserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		997C3B0C2E6B65F700F1D308 /* JSONParserExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JSONParserExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		997C3B0E2E6B65F700F1D308 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		997C3B102E6B65F700F1D308 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		997C3B1C2E6B65F700F1D308 /* Exceptions for "JSONParserExtension" folder in "JSONParserExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 997C3B0B2E6B65F700F1D308 /* JSONParserExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		997C3ADF2E6B65AC00F1D308 /* JSONParser */ = {
@@ -43,6 +83,14 @@
 		997C3AF82E6B65AE00F1D308 /* JSONParserUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = JSONParserUITests;
+			sourceTree = "<group>";
+		};
+		997C3B122E6B65F700F1D308 /* JSONParserExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				997C3B1C2E6B65F700F1D308 /* Exceptions for "JSONParserExtension" folder in "JSONParserExtension" target */,
+			);
+			path = JSONParserExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +117,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		997C3B092E6B65F700F1D308 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				997C3B0F2E6B65F700F1D308 /* Cocoa.framework in Frameworks */,
+				997C3B112E6B65F700F1D308 /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +135,8 @@
 				997C3ADF2E6B65AC00F1D308 /* JSONParser */,
 				997C3AEE2E6B65AE00F1D308 /* JSONParserTests */,
 				997C3AF82E6B65AE00F1D308 /* JSONParserUITests */,
+				997C3B122E6B65F700F1D308 /* JSONParserExtension */,
+				997C3B0D2E6B65F700F1D308 /* Frameworks */,
 				997C3ADE2E6B65AC00F1D308 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +147,18 @@
 				997C3ADD2E6B65AC00F1D308 /* JSONParser.app */,
 				997C3AEB2E6B65AE00F1D308 /* JSONParserTests.xctest */,
 				997C3AF52E6B65AE00F1D308 /* JSONParserUITests.xctest */,
+				997C3B0C2E6B65F700F1D308 /* JSONParserExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		997C3B0D2E6B65F700F1D308 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				997C3B0E2E6B65F700F1D308 /* Cocoa.framework */,
+				997C3B102E6B65F700F1D308 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +171,12 @@
 				997C3AD92E6B65AC00F1D308 /* Sources */,
 				997C3ADA2E6B65AC00F1D308 /* Frameworks */,
 				997C3ADB2E6B65AC00F1D308 /* Resources */,
+				997C3B202E6B65F700F1D308 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				997C3B1A2E6B65F700F1D308 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				997C3ADF2E6B65AC00F1D308 /* JSONParser */,
@@ -163,6 +234,28 @@
 			productReference = 997C3AF52E6B65AE00F1D308 /* JSONParserUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		997C3B0B2E6B65F700F1D308 /* JSONParserExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 997C3B1D2E6B65F700F1D308 /* Build configuration list for PBXNativeTarget "JSONParserExtension" */;
+			buildPhases = (
+				997C3B082E6B65F700F1D308 /* Sources */,
+				997C3B092E6B65F700F1D308 /* Frameworks */,
+				997C3B0A2E6B65F700F1D308 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				997C3B122E6B65F700F1D308 /* JSONParserExtension */,
+			);
+			name = JSONParserExtension;
+			packageProductDependencies = (
+			);
+			productName = JSONParserExtension;
+			productReference = 997C3B0C2E6B65F700F1D308 /* JSONParserExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +277,9 @@
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = 997C3ADC2E6B65AC00F1D308;
 					};
+					997C3B0B2E6B65F700F1D308 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = 997C3AD82E6B65AC00F1D308 /* Build configuration list for PBXProject "JSONParser" */;
@@ -203,6 +299,7 @@
 				997C3ADC2E6B65AC00F1D308 /* JSONParser */,
 				997C3AEA2E6B65AE00F1D308 /* JSONParserTests */,
 				997C3AF42E6B65AE00F1D308 /* JSONParserUITests */,
+				997C3B0B2E6B65F700F1D308 /* JSONParserExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +320,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		997C3AF32E6B65AE00F1D308 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		997C3B0A2E6B65F700F1D308 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +357,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		997C3B082E6B65F700F1D308 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +376,11 @@
 			isa = PBXTargetDependency;
 			target = 997C3ADC2E6B65AC00F1D308 /* JSONParser */;
 			targetProxy = 997C3AF62E6B65AE00F1D308 /* PBXContainerItemProxy */;
+		};
+		997C3B1A2E6B65F700F1D308 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 997C3B0B2E6B65F700F1D308 /* JSONParserExtension */;
+			targetProxy = 997C3B192E6B65F700F1D308 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -511,6 +627,60 @@
 			};
 			name = Release;
 		};
+		997C3B1E2E6B65F700F1D308 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = JSONParserExtension/JSONParserExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZY94S5LYY4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JSONParserExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JSONParserExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JCentercreation.JSONParser.JSONParserExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		997C3B1F2E6B65F700F1D308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = JSONParserExtension/JSONParserExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZY94S5LYY4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JSONParserExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JSONParserExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JCentercreation.JSONParser.JSONParserExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -546,6 +716,15 @@
 			buildConfigurations = (
 				997C3B062E6B65AE00F1D308 /* Debug */,
 				997C3B072E6B65AE00F1D308 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		997C3B1D2E6B65F700F1D308 /* Build configuration list for PBXNativeTarget "JSONParserExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				997C3B1E2E6B65F700F1D308 /* Debug */,
+				997C3B1F2E6B65F700F1D308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
