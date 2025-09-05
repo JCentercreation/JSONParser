@@ -40,7 +40,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
             let prettyData = try JSONSerialization.data(withJSONObject: jsonObject,
                                                        options: [.prettyPrinted, .sortedKeys])
             
-            guard let prettyString = String( prettyData, encoding: .utf8) else {
+            guard let prettyString = String(data: prettyData, encoding: .utf8) else {
                 return "// ❌ Error: Unable to convert to String"
             }
             
