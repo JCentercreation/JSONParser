@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		997C3B0F2E6B65F700F1D308 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997C3B0E2E6B65F700F1D308 /* Cocoa.framework */; };
-		997C3B112E6B65F700F1D308 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997C3B102E6B65F700F1D308 /* XcodeKit.framework */; };
 		997C3B1B2E6B65F700F1D308 /* JSONParserExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 997C3B0C2E6B65F700F1D308 /* JSONParserExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		997C3B212E6B665800F1D308 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997C3B102E6B65F700F1D308 /* XcodeKit.framework */; };
+		997C3B222E6B665800F1D308 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 997C3B102E6B65F700F1D308 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,17 @@
 				997C3B1B2E6B65F700F1D308 /* JSONParserExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		997C3B232E6B665800F1D308 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				997C3B222E6B665800F1D308 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -122,7 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				997C3B0F2E6B65F700F1D308 /* Cocoa.framework in Frameworks */,
-				997C3B112E6B65F700F1D308 /* XcodeKit.framework in Frameworks */,
+				997C3B212E6B665800F1D308 /* XcodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +253,7 @@
 				997C3B082E6B65F700F1D308 /* Sources */,
 				997C3B092E6B65F700F1D308 /* Frameworks */,
 				997C3B0A2E6B65F700F1D308 /* Resources */,
+				997C3B232E6B665800F1D308 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
