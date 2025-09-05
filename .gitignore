@@ -1,0 +1,4 @@
+# Xcode gitignore
+xcuserdata/
+build/
+DerivedData/
