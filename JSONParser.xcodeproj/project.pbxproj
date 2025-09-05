@@ -11,6 +11,7 @@
 		997C3B1B2E6B65F700F1D308 /* JSONParserExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 997C3B0C2E6B65F700F1D308 /* JSONParserExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		997C3B212E6B665800F1D308 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997C3B102E6B65F700F1D308 /* XcodeKit.framework */; };
 		997C3B222E6B665800F1D308 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 997C3B102E6B65F700F1D308 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		997C3B2B2E6B748E00F1D308 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 997C3B2A2E6B748E00F1D308 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		997C3B0C2E6B65F700F1D308 /* JSONParserExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JSONParserExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		997C3B0E2E6B65F700F1D308 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		997C3B102E6B65F700F1D308 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		997C3B2A2E6B748E00F1D308 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -144,6 +146,7 @@
 		997C3AD42E6B65AC00F1D308 = {
 			isa = PBXGroup;
 			children = (
+				997C3B2A2E6B748E00F1D308 /* README.md */,
 				997C3ADF2E6B65AC00F1D308 /* JSONParser */,
 				997C3AEE2E6B65AE00F1D308 /* JSONParserTests */,
 				997C3AF82E6B65AE00F1D308 /* JSONParserUITests */,
@@ -322,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				997C3B2B2E6B748E00F1D308 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
